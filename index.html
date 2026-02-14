@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>VS Code Style Editor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="navbar">
+    <h2>⚡ Web Code Editor</h2>
+    <div>
+        <button onclick="runCode()">Run</button>
+        <button onclick="clearCode()">Clear</button>
+    </div>
+</div>
+
+<div class="container">
+
+    <div class="editor">
+
+        <div class="tab">HTML</div>
+        <div class="code-container">
+            <div class="line-numbers" id="htmlLines"></div>
+            <textarea id="htmlCode"></textarea>
+        </div>
+
+        <div class="tab">CSS</div>
+        <div class="code-container">
+            <div class="line-numbers" id="cssLines"></div>
+            <textarea id="cssCode"></textarea>
+        </div>
+
+        <div class="tab">JavaScript</div>
+        <div class="code-container">
+            <div class="line-numbers" id="jsLines"></div>
+            <textarea id="jsCode"></textarea>
+        </div>
+
+    </div>
+
+    <iframe id="output"></iframe>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
